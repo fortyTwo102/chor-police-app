@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity1">
+
+
+    <TextView
+        android:id="@+id/banner2"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="48dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="TAP TO ASSIGN CHARACTER"
+        android:textColor="@android:color/background_light"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="57dp"
+        android:layout_marginLeft="57dp"
+        android:layout_marginBottom="296dp"
+        android:onClick="ButtonTapped"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/a"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="58dp"
+        android:layout_marginRight="58dp"
+        android:onClick="ButtonTapped"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/a"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginBottom="133dp"
+        android:onClick="ButtonTapped"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/d"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/b"
+        android:layout_alignTop="@+id/c"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="-2dp"
+        android:onClick="ButtonTapped"
+        android:text="Button" />
+
+    <TextView
+        android:id="@+id/banner3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/banner2"
+        android:layout_alignStart="@+id/c"
+        android:layout_marginStart="-60dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="(hide the screen and wait for your role to disappear)"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/go"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="219dp"
+        android:onClick="nextPage"
+        android:text="GO"
+        android:visibility="invisible" />
+</RelativeLayout>
